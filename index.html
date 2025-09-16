@@ -55,12 +55,43 @@
                 <div class="register-link">
                     <p>Not a member? <a href="register.html">Sign up now</a></p>
                 </div>
+                
+                <div class="separator">
+                    <hr>
+                    <p>Or Sign in with</p>
+                </div>
+                
+                <div class="social-login">
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </div>
             </form>
         </div>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.0/firebase-auth.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "TU_API_KEY",
+            authDomain: "mi-login-web.firebaseapp.com",
+            projectId: "mi-login-web",
+            appId: "TU_APP_ID"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+
 </body>
 
 </html>
